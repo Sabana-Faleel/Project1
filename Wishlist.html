@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.navbar ul{
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+   overflow: hidden;
+  
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-size: larger;
+     text-transform: uppercase;
+    
+}
+.navbar a:hover{
+    background-color: rgb(195, 221, 221); 
+}
+.navbar li{
+ 
+   float: left;
+}
+
+
+main {
+    margin: 0;
+    padding: 0;
+}
+.wishlist {
+    max-width: 600px;
+    height: 500px;
+    margin: 50px ;
+    padding: 20px;
+    background-color: #fff;
+
+box-shadow: 2px 2px 2px 2px;
+  }
+
+
+.product-image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.details h2 {
+    margin: 0;
+    color: rgb(122, 117, 117);
+}
+
+.details p {
+    margin: 20;
+    color: hsl(0, 1%, 30%);
+}
+.remove-button { 
+    color: rgb(15, 15, 15);
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.remove-button:hover {
+    background-color: red;
+}
+</style>
+<body>
+   
+ <nav class= navbar>
+    
+    <img src="https://seekvectorlogo.com/wp-content/uploads/2020/10/carwale-vector-logo.png" width="300" height="150"/>
+
+<ul>
+    <li> <a href="Home.html">Home</a></li>
+    <li><a href="AboutUS.html">AboutUS</a></li>
+    <li><a href="Inventory.html">Inventory</a></li>
+    <li><a href="Wishlist.html">Wishlist</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+</ul>
+ </nav>
+
+ <main>
+    <hr>
+    <div class="wishlist">
+        <h1>Your Wishlist</h1>
+        <div class="item1">
+            <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/156405/xuv-3xo-exterior-right-front-three-quarter-33.jpeg?isig=0&q=80"  alt="Mahindra XUV 3XO" class="product-image">
+            <div class="details">
+                <h2>Mahindra XUV 3XO</h2>
+                <p>Rs. 7.49 Lakh</p>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+        <div class="item2">
+            <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80"alt="Maruti Fronx" class="product-image">
+            <div class="details">
+                <h2>Maruti Fronx</h2>
+                <p>Rs. 7.51 Lakh</p>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+    </div> <hr>
+ </main>
+
+</body>
+</html>

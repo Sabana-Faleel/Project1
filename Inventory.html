@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+
+.navbar ul{
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+   overflow: hidden;
+  
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-size: larger;
+     text-transform: uppercase;
+    
+}
+.navbar a:hover{
+    background-color: rgb(195, 221, 221); 
+}
+.navbar li{
+ 
+   float: left;
+}
+main{
+   margin: 0px;
+   padding:0px;
+   box-sizing: border-box;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.box{
+    margin-top: 50px;
+    position: relative;
+}
+.box input{
+    width: 500px;
+     height:30px;
+    font-size: 20px;
+    padding: 10px ;
+    border-radius: 10px;
+    border: none;
+ box-shadow: 1px 1px ;
+
+}
+.box input:hover{
+width:700px;
+
+}
+.box i{
+position: absolute;
+top: 35%;
+right: 20px;
+}
+.carname{
+    background-color: rgb(224, 214, 66);
+    width:200px;
+    height: 100px;
+    padding: 2px;
+
+}
+.Price{
+    background-color: rgb(224, 214, 66);
+    width:200px;
+    height: 100px;
+    padding: 2px;
+
+}
+.web
+{
+border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.car
+{
+ margin: 10px;
+ padding: 10px;
+  width: 300px;
+  height: 350px;
+border: 4px solid #e9e5e5;
+box-shadow: 3px 3px;
+}
+.car:hover{
+ width: 300px;
+border: 4px solid rgb(225, 233, 222);
+background-color: rgb(104, 110, 104);
+}
+</style>
+<body>
+    
+<nav class= navbar>
+    <img src="https://seekvectorlogo.com/wp-content/uploads/2020/10/carwale-vector-logo.png" width="300" height="150"/>
+<ul>
+    <li> <a href="Home.html">Home</a></li>
+    <li><a href="AboutUS.html">AboutUS</a></li>
+    <li><a href="Inventory.html">Inventory</a></li>
+    <li><a href="Wishlist.html">Wishlist</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+</ul>
+ </nav>
+
+<main>
+   <div class="box">
+    <input type="text" placeholder="Search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+ </main>
+ <br>
+<div class="info">
+
+ <div class="carname">
+ <h3>Car Name:</h3> 
+<div class="select">
+    <select name="Name" id="filter">
+   <option value="Mahindra XUV 3XO">Mahindra XUV 3XO</option>
+<option value="Maruti Fronx">Maruti Fronx</option>
+<option value="Toyota Taisor">Toyota Taisor</option>
+<option value="MINI Cooper">MINI Cooper</option>
+<option value=" Renault Kiger">Renault Kiger</option>
+<option value="BMW 5 Series ">BMW 5 Series</option>
+<option value="Skoda Kushaq">Skoda Kushaq</option>
+<option value="Mahindra XUV 700">Mahindra XUV 700 </option>
+<option value=" MINI Countryman Electric"> MINI Countryman Electric</option>
+    </select>
+</div>
+</div>
+
+<div class="Price">
+    <h3>Price:</h3> 
+   <div class="select1">
+       <select name="value" id="price">
+      <option value="Rs: 6-10 Lakh">Rs: 6-10 Lakh</option>
+   <option value="Rs 10-20 Lakh">Rs :10-20 Lakh</option>
+   <option value="Rs Above 20 lakh ">Rs: Above 20 lakh</option>
+ </select>
+   </div>
+   </div>
+</div>
+<br>
+<div class="web" id="Car MODELS">
+
+    <div class="car" id="model1">
+    <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/156405/xuv-3xo-exterior-right-front-three-quarter-33.jpeg?isig=0&q=80" width="300px" height="200px" alt="Mahindra"/>
+    <h2>Mahindra XUV 3XO </h2>
+    <h3>Rs. 7.49 Lakh onwards</h3> <button>Add to Cart</button>
+   </div>
+<div class="car" id="model2">
+    <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80" width="300px" height="200px" alt="Maruti Fronx "/>
+    <h2>Maruti Fronx </h2>
+    <h3>Rs. 7.51 Lakh onwards</h3>  <button>Add to Cart</button>
+</div>
+<div class="car" id="model3">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/132427/taisor-exterior-right-front-three-quarter-2.png?isig=0&q=80" width="300px" height="200px" alt="Toyota Taisor "/>
+    <h2>Toyota Taisor </h2>
+    <h3>Rs. 7.74  Lakh  onwards</h3>  <button>Add to Cart</button>
+</div>
+<div class="car" id="model4">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/180421/cooper-s-exterior-right-front-three-quarter-11.jpeg?isig=0&q=80" width="300px" height="200px" alt="MINI Cooper"/>
+    <h2> MINI Cooper </h2>
+    <h3>Rs.44.90  Lakh  onwards</h3> <button>Add to Cart</button>
+</div>
+<div class="car" id="model5">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/141857/kiger-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80" width="300px" height="200px" alt=" Renault Kiger"/>
+    <h2> Renault Kiger </h2>
+    <h3>Rs. 6.70  Lakh  onwards</h3> <button>Add to Cart</button>
+</div>
+<div class="car" id="model6">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/175183/new-5-series-exterior-right-front-three-quarter.jpeg?isig=0&q=80" width="300px" height="200px" alt="BMW 5 Series"/>
+    <h2> BMW 5 Series </h2>
+    <h3>Rs. 72.74  Lakh  onwards</h3> <button>Add to Cart</button>
+ 
+</div>
+<div class="car" id="model7">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80" width="300px" height="200px" alt="Skoda Kushaq"/>
+    <h2> Skoda Kushaq </h2>
+    <h3>Rs. 10.87  Lakh  onwards</h3> <button>Add to Cart</button>
+</div>
+<div class="car" id="model8">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" width="300px" height="200px" alt="Mahindra XUV 700"/>
+    <h2> Mahindra XUV 700 </h2>
+    <h3>Rs. 13.84  Lakh  onwards</h3> <button>Add to Cart</button>
+</div>
+<div class="car" id="model9">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/181081/countryman-electric-exterior-right-front-three-quarter.jpeg?isig=0&q=80" width="300px" height="200px" alt="MINI Countryman"/>
+    <h2> MINI Countryman Electric</h2>
+    <h3>Rs. 54.84  Lakh  onwards</h3> <button>Add to Cart</button>
+</div>
+</div>
+
+</body>
+</html>
